@@ -5,5 +5,8 @@ package com.thoughtworks;
  * @author adminzxl
  */
 public class FizzBuzz {
+    public String say(int i) {
 
+        return "1";
+    }
 }
