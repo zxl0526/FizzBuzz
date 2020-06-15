@@ -18,15 +18,23 @@ public class FizzBuzz {
         if(number % five == 0  && number % three != 0){
             return buzz;
         }
-        if(number % three ==0 && number % five == 0){
+        if(number % three ==0 && number % five == 0 && number % seven != 0 ){
             return fizz+buzz;
         }
         if(number % seven ==0 && number % three !=0 ){
             return whizz;
         }
-        if(number % seven ==0 && number % three ==0 ){
+        if(number % seven ==0 && number % three ==0 && number % five != 0  ){
             return fizz+whizz;
         }
+        if(number % seven ==0 && number % five ==0  && number % three ==0){
+            return fizz+buzz+whizz;
+        }
+        // 处理包含关系
+        if (String.valueOf(number).contains("3")) {
+            return "Fizz";
+        }
+
         return String.valueOf(number);
     }
 }
