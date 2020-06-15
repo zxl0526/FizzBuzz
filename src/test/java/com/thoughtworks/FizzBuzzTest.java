@@ -66,6 +66,11 @@ public class FizzBuzzTest {
         should_return_String_when_given_number(375,"Fizz");
     };
 
+    @Test
+    public void  should_return_String_when_given_210(){
+        should_return_String_when_given_number(210,"FizzBuzzWhizz");
+    };
+
     public void  should_return_String_when_given_number(int num,String resultA){
 
         FizzBuzz fizzBuzz = new FizzBuzz();
