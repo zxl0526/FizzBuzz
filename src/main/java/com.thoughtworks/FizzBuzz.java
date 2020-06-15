@@ -12,19 +12,17 @@ public class FizzBuzz { public String say(int number) {
     int five = 5;
     int seven = 7;
 
-
-    // 处理包含5关系
-    if (String.valueOf(number).contains("5")) {
+    // 处理包含7关系
+    if (String.valueOf(number).contains("7")) {
+        return "Fizz";
+    }else if (String.valueOf(number).contains("5")) {// 处理包含5关系
         // 处理包含3关系
         return "BuzzWhizz";
 
     }else if (String.valueOf(number).contains("3")) {
         return "Fizz";
     }
-    // 处理包含7关系
-    //if (String.valueOf(number).contains("7")) {
-      //  return "Fizz";
-    //}
+
 
 
     if(number % three ==0 && number % five != 0 && number % seven != 0 ){

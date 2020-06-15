@@ -28,8 +28,11 @@ public class FizzBuzzTest {
         should_return_String_when_given_number(15,"BuzzWhizz");
     };
     @Test
-    public void  should_return_String_when_given_7(){
+    /*public void  should_return_String_when_given_7(){
         should_return_String_when_given_number(7,"Whizz");
+    };*/
+    public void  should_return_String_when_given_7(){
+        should_return_String_when_given_number(7,"Fizz");
     };
     @Test
     public void  should_return_String_when_given_21(){
@@ -52,9 +55,17 @@ public class FizzBuzzTest {
     };
 
     @Test
-    public void  should_return_String_when_given_75(){
+    /*public void  should_return_String_when_given_75(){
         should_return_String_when_given_number(75,"BuzzWhizz");
+    };*/
+    public void  should_return_String_when_given_75(){
+        should_return_String_when_given_number(75,"Fizz");
     };
+    @Test
+    public void  should_return_String_when_given_375(){
+        should_return_String_when_given_number(375,"Fizz");
+    };
+
     public void  should_return_String_when_given_number(int num,String resultA){
 
         FizzBuzz fizzBuzz = new FizzBuzz();
