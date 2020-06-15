@@ -5,17 +5,19 @@ package com.thoughtworks;
  * @author adminzxl
  */
 public class FizzBuzz {
-    public String say(int i) {
-
-        if(i % 3 ==0 && i % 5 != 0 ){
+    public String say(int number) {
+        int three = 3;
+        int five = 5;
+        if(number % three ==0 && number % five != 0 ){
             return "Fizz";
         }
-        if(i % 5 == 0  && i % 3 != 0){
+        if(number % five == 0  && number % three != 0){
             return "Buzz";
         }
-        if(i % 3 ==0 && i % 5 == 0){
+        if(number % three ==0 && number % five == 0){
             return "FizzBuzz";
         }
-        return "1";
+
+        return String.valueOf(number);
     }
 }
